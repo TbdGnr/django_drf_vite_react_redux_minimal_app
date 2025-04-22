@@ -26,6 +26,10 @@ Cette application contient une structure minimale d'application DRF/React
  - ```npm install```
  - ```npm run dev```
 
+## Accéder à l'app
+
+Accédez à ```http://localhost:5473/``` sur un navigateur web.
+
 Pour changer les produits disponibles, un compte d'admin existe déjà sur ```http://localhost:8000/admin``` :
  - username : thibaud
  - mot de passe : 1234
