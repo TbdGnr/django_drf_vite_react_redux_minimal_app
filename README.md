@@ -9,3 +9,22 @@
     - Redux
 
 Cette application contient une structure minimale d'application DRF/React
+
+# Installation
+## Requis : 
+ - Python 3
+ - npm / Vite.js
+
+ - ```git clone https://github.com/TbdGnr/uber_eats```
+ - ```cd uber_eats/backend```
+ - ```python -m venv venv```
+ - ```source venv/bin/activate``` sur mac/linux ou ```venv\Scripts\activate.bat``` sur Windows
+ - ```pip install -r requirements.txt```
+ - ```python uber_eats/manage.py runserver```
+ - ```cd ../frontend```
+ - ```npm install```
+ - ```npm run dev```
+
+Pour changer les produits disponibles, un compte d'admin existe déjà sur ```http://localhost:8000/admin``` :
+ - username : thibaud
+ - mot de passe : 1234
