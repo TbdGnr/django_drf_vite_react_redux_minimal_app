@@ -15,6 +15,7 @@ Cette application contient une structure minimale d'application DRF/React
  - Python 3
  - npm / Vite.js
 
+## Étapes d'installation
  - ```git clone https://github.com/TbdGnr/uber_eats```
  - ```cd uber_eats/backend```
  - ```python -m venv venv```
