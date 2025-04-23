@@ -1,76 +1,76 @@
-# 🍕 Micro-App Fullstack – Django / DRF / React / Redux / Vite
+# 🍕 Micro Fullstack App – Django / DRF / React / Redux / Vite
 
-Cette micro-application web fullstack montre comment faire cohabiter efficacement plusieurs technologies modernes :
+This is a minimal fullstack web application that demonstrates how to make modern technologies work seamlessly together:
 
-## 🛠️ Technologies utilisées
+## 🛠️ Tech Stack
 
 ### 🔙 Backend
-- **Django** — Framework Python robuste pour construire une base de données et une API rapidement.
-- **Django REST Framework** — Extension de Django pour exposer les données sous forme d'API RESTful.
+- **Django** — A robust Python framework to quickly build backend logic and manage databases.
+- **Django REST Framework (DRF)** — A powerful toolkit for exposing Django models via a RESTful API.
 
 ### 🔜 Frontend
-- **Vite.js** — Outil de build ultra-rapide, alternative moderne à Create React App.
-- **React.js** — Bibliothèque JavaScript pour construire une interface utilisateur dynamique.
-- **Redux.js (Toolkit)** — Système de gestion d’état centralisé côté client.
+- **Vite.js** — A blazing-fast build tool and development server, a modern alternative to Create React App.
+- **React.js** — A declarative JavaScript library for building user interfaces.
+- **Redux (with Redux Toolkit)** — A predictable client-side state management library.
 
 ---
 
-## 📦 Fonctionnalités
+## 📦 Features
 
-L’application simule un système de commande à la Uber Eats pour des **pizzas**.  
-Chaque commande est liée à un **numéro de téléphone**.
+The app simulates a simple **pizza ordering flow** à la Uber Eats.  
+Each order is tied to a **phone number**.
 
-### 🔄 Parcours utilisateur
+### 🔄 User flow
 
-- 🧾 **Saisie du numéro de téléphone** pour commencer une commande.
-- ➕ **Ajout/Suppression de pizzas** depuis une liste de produits.
-- 💾 Si l’utilisateur quitte avant d’avoir terminé, **la commande est automatiquement récupérée** lorsqu’il saisit à nouveau son numéro.
-- ✅ Une fois prêt, il peut **valider la commande**.
-- 🎁 Sur la page de confirmation, **un code promo `PROMO10` applique une réduction de 10€** si la commande dépasse 30€.
+- 🧾 **Enter a phone number** to begin a new order.
+- ➕ **Add/Remove pizzas** from a list of available products.
+- 💾 If the user closes the app, the order can be **recovered later by re-entering the same phone number**.
+- ✅ Once ready, the user can **confirm the order**.
+- 🎁 On the confirmation page, entering the code `PROMO10` will apply a **€10 discount** for orders over €30.
 
 ---
 
 ## 🚀 Installation
 
-### ✅ Prérequis
+### ✅ Prerequisites
 - Python 3.x
-- `npm` (Node.js) et Vite.js
+- `npm` and Vite.js
 
 ---
 
-### 📁 Étapes d’installation
+### 📁 Setup Instructions
 
-#### 1. Backend Django (dans un premier terminal)
+#### 1. Backend – Django (in the first terminal)
 
 ```bash
-git clone https://github.com/TbdGnr/django_drf_vite_react_redux_minimal_app
+git clone https://github.com/TbdGnr/uber_eats
 cd uber_eats/backend
 python -m venv venv
 ```
 
-**Activer l’environnement virtuel :**
-- macOS/Linux :
+**Activate the virtual environment:**
+- macOS/Linux:
   ```bash
   source venv/bin/activate
   ```
-- Windows :
+- Windows:
   ```bash
   venv\Scripts\activate.bat
   ```
 
-**Installer les dépendances :**
+**Install dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-**Lancer le serveur :**
+**Start the server:**
 ```bash
 python uber_eats/manage.py runserver
 ```
 
 ---
 
-#### 2. Frontend React (dans un second terminal)
+#### 2. Frontend – React (in a second terminal)
 
 ```bash
 cd frontend
@@ -80,14 +80,14 @@ npm run dev
 
 ---
 
-## 🌐 Accès à l'application
+## 🌐 Access the App
 
-- Application cliente : [http://localhost:5173/](http://localhost:5173/)
-- Interface d’administration Django : [http://localhost:8000/admin](http://localhost:8000/admin)
+- Frontend App: [http://localhost:5173/](http://localhost:5173/)
+- Django Admin: [http://localhost:8000/admin](http://localhost:8000/admin)
 
-### 👤 Connexion admin (pour gérer les produits)
+### 👤 Admin credentials
 
-Un compte admin est préconfiguré :
+An admin account is pre-configured to manage products:
 
-- **Nom d’utilisateur** : `thibaud`  
-- **Mot de passe** : `1234`
+- **Username**: `thibaud`  
+- **Password**: `1234`
