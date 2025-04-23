@@ -43,7 +43,7 @@ Chaque commande est liée à un **numéro de téléphone**.
 #### 1. Backend Django (dans un premier terminal)
 
 ```bash
-git clone https://github.com/TbdGnr/uber_eats
+git clone https://github.com/TbdGnr/django_drf_vite_react_redux_minimal_app
 cd uber_eats/backend
 python -m venv venv
 ```
