@@ -1,7 +1,3 @@
-Voici une version réécrite de ton README, plus claire, structurée et fluide tout en conservant ton style et l'esprit du projet :
-
----
-
 # 🍕 Micro-App Fullstack – Django / DRF / React / Redux / Vite
 
 Cette micro-application web fullstack montre comment faire cohabiter efficacement plusieurs technologies modernes :
