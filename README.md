@@ -43,7 +43,7 @@ Each order is tied to a **phone number**.
 #### 1. Backend – Django (in the first terminal)
 
 ```bash
-git clone https://github.com/TbdGnr/uber_eats
+git clone https://github.com/TbdGnr/django_drf_vite_react_redux_minimal_app
 cd uber_eats/backend
 python -m venv venv
 ```
