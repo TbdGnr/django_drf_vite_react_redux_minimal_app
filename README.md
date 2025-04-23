@@ -16,20 +16,25 @@ Cette application contient une structure minimale d'application DRF/React
  - npm / Vite.js
 
 ## Étapes d'installation
- - ```git clone https://github.com/TbdGnr/uber_eats```
- - ```cd uber_eats/backend```
- - ```python -m venv venv```
- - ```source venv/bin/activate``` sur mac/linux ou ```venv\Scripts\activate.bat``` sur Windows
- - ```pip install -r requirements.txt```
- - ```python uber_eats/manage.py runserver```
- - ```cd ../frontend```
- - ```npm install```
- - ```npm run dev```
+ - Ouvrir un premier terminal :
+   - ```git clone https://github.com/TbdGnr/uber_eats```
+   - ```cd uber_eats/backend```
+   - ```python -m venv venv```
+   - macOS/Linux :
+      - ```source venv/bin/activate```
+   - Windows :
+      - ```venv\Scripts\activate.bat``` sur Windows
+   - ```pip install -r requirements.txt```
+   - ```python uber_eats/manage.py runserver```
+ - Ouvrir un second terminal
+   - ```cd frontend```
+   - ```npm install```
+   - ```npm run dev```
 
 ## Accéder à l'app
 
-Accédez à ```http://localhost:5473/``` sur un navigateur web.
-
-Pour changer les produits disponibles, un compte d'admin existe déjà sur ```http://localhost:8000/admin``` :
+Accédez à ```http://localhost:5473/``` sur un navigateur web pour l'application
+Accédez à ```http://localhost:8000/admin``` pour modifier les produits de l'application.
+Pour changer les produits disponibles, un compte d'admin existe déjà :
  - username : thibaud
  - mot de passe : 1234
