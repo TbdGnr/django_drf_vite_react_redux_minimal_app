@@ -91,12 +91,3 @@ Un compte admin est préconfiguré :
 
 - **Nom d’utilisateur** : `thibaud`  
 - **Mot de passe** : `1234`
-
----
-
-Si tu veux, je peux aussi ajouter :
-- des captures d’écran
-- une section "Architecture technique"
-- une section "Améliorations possibles"
-
-Souhaites-tu que je t’aide à pousser ce README vers ton GitHub avec la bonne mise en forme ?
