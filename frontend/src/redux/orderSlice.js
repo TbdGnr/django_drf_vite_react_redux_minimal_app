@@ -3,12 +3,14 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from 'axios'
 
+const API_BASE = "http://localhost:8000/api"
+
 /*
   🎯 Action asynchrone (appel API) pour démarrer une commande.
   Elle envoie le numéro de téléphone à l'API et récupère la commande.
 */
 export const startOrder = createAsyncThunk('order/startOrder', async (phone) => {
-  const res = await axios.post('/api/order/start/', { phone })
+  const res = await axios.post(`${API_BASE}/order/start/`, { phone })
   return res.data // ça retourne une commande (avec id, phone, items, etc.)
 })
 
@@ -105,7 +107,7 @@ const orderSlice = createSlice({
 
 // Ajouter un produit à la commande
 export const addItem = createAsyncThunk('order/addItem', async ({ orderId, productId }) => {
-  const res = await axios.post('/api/order/add-item/', {
+  const res = await axios.post(`${API_BASE}/order/add-item/`, {
     order_id: orderId,
     product_id: productId,
   })
@@ -114,7 +116,7 @@ export const addItem = createAsyncThunk('order/addItem', async ({ orderId, produ
 
 // Retirer un produit
 export const removeItem = createAsyncThunk('order/removeItem', async ({ orderId, productId }) => {
-  const res = await axios.post('/api/order/remove-item/', {
+  const res = await axios.post(`${API_BASE}/order/remove-item/`, {
     order_id: orderId,
     product_id: productId,
   })
@@ -125,7 +127,7 @@ export const removeItem = createAsyncThunk('order/removeItem', async ({ orderId,
 export const confirmOrder = createAsyncThunk(
   'order/confirm',
   async ({ orderId, promoCode }) => {
-    const res = await axios.post('/api/order/confirm/', {
+    const res = await axios.post(`${API_BASE}/order/confirm/`, {
       order_id: orderId,
       promo_code: promoCode,
     })
