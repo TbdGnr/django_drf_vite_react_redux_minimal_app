@@ -36,6 +36,7 @@ Chaque commande est liée à un **numéro de téléphone**.
 
 ```bash
 git clone https://github.com/TbdGnr/django_drf_vite_react_redux_minimal_app
+cd django_drf_vite_react_redux_minimal_app
 docker compose up --build
 ```
 
