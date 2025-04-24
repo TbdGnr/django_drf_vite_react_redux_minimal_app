@@ -42,6 +42,7 @@ docker compose up --build
 
 Ouvrez ```http://localhost:4173/``` dans un navigateur
 
+## Installation classique
 ### ✅ Prérequis
 - Python 3.x
 - `npm` (Node.js) et Vite.js
