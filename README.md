@@ -57,7 +57,7 @@ Open ```http://localhost:4173/``` in a browser
 
 ```bash
 git clone https://github.com/TbdGnr/django_drf_vite_react_redux_minimal_app
-cd uber_eats/backend
+cd django_drf_vite_react_redux_minimal_app/backend
 python -m venv venv
 ```
 
