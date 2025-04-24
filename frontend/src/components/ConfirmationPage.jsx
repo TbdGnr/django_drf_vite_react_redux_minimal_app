@@ -38,7 +38,7 @@ export default function ConfirmationPage() {
 
   return (
     <div className="container mt-5">
-      <h2>Confirmation de votre commande</h2>
+      <h2>Order confrmation</h2>
 
       {/* Récapitulatif des produits */}
       <ul className="list-group mb-3">
@@ -62,7 +62,7 @@ export default function ConfirmationPage() {
       {!confirmed && (
         <>
           <div className="mb-3">
-            <label htmlFor="promo">Code promo :</label>
+            <label htmlFor="promo">Voucher code :</label>
             <input
               id="promo"
               type="text"
@@ -73,7 +73,7 @@ export default function ConfirmationPage() {
             />
           </div>
           <button className="btn btn-success" onClick={handleConfirm} disabled={loading}>
-            {loading ? 'Confirmation...' : 'Confirmer ma commande'}
+            {loading ? 'Confirming...' : 'Confirm'}
           </button>
         </>
       )}
@@ -81,14 +81,14 @@ export default function ConfirmationPage() {
       {/* Après confirmation */}
       {confirmed && confirmationInfo && (
         <div className="alert alert-success mt-4">
-          <h4>Commande confirmée 🎉</h4>
-          <p>Montant initial : {Number(confirmationInfo.total).toFixed(2)} €</p>
+          <h4>Order confirmed 🎉</h4>
+          <p>Initial amount : {Number(confirmationInfo.total).toFixed(2)} €</p>
           {confirmationInfo.discount > 0 && (
-            <p>Remise : -{Number(confirmationInfo.discount).toFixed(2)} €</p>
+            <p>Voucher : -{Number(confirmationInfo.discount).toFixed(2)} €</p>
           )}
-          <p><strong>Total payé : {Number(confirmationInfo.final_total).toFixed(2)} €</strong></p>
+          <p><strong>Total paid : {Number(confirmationInfo.final_total).toFixed(2)} €</strong></p>
           <button className="btn btn-primary mt-3" onClick={handleNewOrder}>
-            Faire une nouvelle commande
+            New order
           </button>
         </div>
       )}

@@ -38,13 +38,13 @@ export default function OrderPage() {
 
   return (
     <div className="container mt-4">
-      <h2>Bonjour, {phone} !</h2>
-      <p>Sélectionnez vos produits :</p>
+      <h2>Hello, {phone} !</h2>
+      <p>Select your products :</p>
 
       {loadingProducts ? (
-        <p>Chargement des produits...</p>
+        <p>Loadind products...</p>
       ) : errorProducts ? (
-        <div className="alert alert-danger">Erreur : {errorProducts}</div>
+        <div className="alert alert-danger">Error : {errorProducts}</div>
       ) : (
         <div className="row">
           {products.map((product) => {
@@ -64,7 +64,7 @@ export default function OrderPage() {
                       </div>
                     ) : (
                       <button className="btn btn-primary" onClick={() => handleAdd(product.id)}>
-                        Ajouter
+                        Add
                       </button>
                     )}
                   </div>
@@ -77,9 +77,9 @@ export default function OrderPage() {
 
       {/* Récapitulatif du panier */}
       <div className="mt-5">
-        <h4>Mon panier</h4>
+        <h4>My order</h4>
         {cartItems.length === 0 ? (
-          <p>Aucun produit sélectionné.</p>
+          <p>No product</p>
         ) : (
           <ul className="list-group mb-3">
             {cartItems.map((item) => (
@@ -98,7 +98,7 @@ export default function OrderPage() {
           onClick={() => navigate('/confirm')}
           disabled={cartItems.length === 0}
         >
-          Valider la commande
+          Continue
         </button>
       </div>
     </div>

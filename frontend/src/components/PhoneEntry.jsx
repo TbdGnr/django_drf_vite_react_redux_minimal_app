@@ -29,8 +29,8 @@ export default function PhoneEntry() {
 
   return (
     <div className="container mt-5">
-      <h2 className="mb-3">Bienvenue !</h2>
-      <p>Entrez votre numéro de téléphone pour commencer une commande :</p>
+      <h2 className="mb-3">Welcome !</h2>
+      <p>Enter any phone number (10 digits)</p>
 
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -45,12 +45,12 @@ export default function PhoneEntry() {
         </div>
 
         <button type="submit" className="btn btn-primary" disabled={loading}>
-          {loading ? 'Chargement...' : 'Commencer ma commande'}
+          {loading ? 'Loading...' : 'Start order'}
         </button>
       </form>
 
       {/* Si erreur, on l’affiche dans une alerte */}
-      {error && <div className="alert alert-danger mt-3">Erreur : {error}</div>}
+      {error && <div className="alert alert-danger mt-3">Error : {error}</div>}
     </div>
   )
 }
