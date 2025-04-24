@@ -3,7 +3,7 @@ import axios from 'axios'
 
 // Action asynchrone pour charger tous les produits
 export const fetchProducts = createAsyncThunk('products/fetchAll', async () => {
-  const res = await axios.get('http://127.0.0.1:8000/api/products/')
+  const res = await axios.get('/api/products/')
   return res.data
 })
 

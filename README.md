@@ -30,8 +30,20 @@ Each order is tied to a **phone number**.
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
+## 🐳 Docker (easiest)
+⬇️ Docker needed
+
+```bash
+git clone https://github.com/TbdGnr/django_drf_vite_react_redux_minimal_app
+docker compose up --build
+```
+
+Open ```http://localhost:4173/``` in a browser
+
+
+## Classic installation
 ### ✅ Prerequisites
 - Python 3.x
 - `npm` and Vite.js

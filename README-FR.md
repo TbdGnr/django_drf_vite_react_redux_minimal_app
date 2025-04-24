@@ -30,7 +30,16 @@ Chaque commande est liée à un **numéro de téléphone**.
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
+## 🐳 Docker (facile)
+⬇️ Docker doit être installé
+
+```bash
+git clone https://github.com/TbdGnr/django_drf_vite_react_redux_minimal_app
+docker compose up --build
+```
+
+Ouvrez ```http://localhost:4173/``` dans un navigateur
 
 ### ✅ Prérequis
 - Python 3.x
@@ -39,6 +48,7 @@ Chaque commande est liée à un **numéro de téléphone**.
 ---
 
 ### 📁 Étapes d’installation
+
 
 #### 1. Backend Django (dans un premier terminal)
 
